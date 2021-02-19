@@ -1,0 +1,22 @@
+.navigation-button-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    background-color: #0f4497;
+    color: white;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.navigation-button-back:hover {
+    background-color: #0c2c60;
+    color: rgb(255, 255, 255);
+}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}

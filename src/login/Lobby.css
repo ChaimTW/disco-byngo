@@ -1,0 +1,65 @@
+.lobby {
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.tracks::-webkit-scrollbar {
+    display: none;
+  }
+
+.outer-container {
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 15px;
+    height: 600px !important;
+    width: 90% !important;
+    max-width: 800px;
+    background: #ebbe42;
+}
+
+.inner-container {
+    box-sizing: border-box;
+    width: 100% !important;
+    height: 100% !important;
+    background: #252525;
+    border-radius: 8px;
+    padding: 20px;
+    -webkit-box-shadow: inset 0px 2px 15px 1px #000000; 
+    box-shadow: inset 0px 2px 15px 1px #000000;
+}
+
+.join-instructions {
+    text-align: center;
+}
+
+hr {
+    margin: 20px
+}
+
+.welcome {
+    text-align: center;
+}
+
+.player, .track {
+    margin-bottom: 10px
+}
+
+.players-tracks {
+    display: flex;
+    height: 60%;
+    
+}
+
+.players {
+    flex: 0.5;
+    padding: 12px
+}
+
+.tracks {
+    flex: 0.5;
+    padding: 12px;
+    overflow: scroll;
+}

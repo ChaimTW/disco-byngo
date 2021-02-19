@@ -1,0 +1,103 @@
+.container {
+    width: 90%;
+    height: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: white;
+}
+
+.login-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login-url > h2 {
+    display: flex;
+    align-items: center;
+}
+
+.room-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.room-code > h1 {
+    background-color: #243551;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 5px
+}
+
+.container > hr {
+    border-color: #243551;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.players-amount {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.players-amount > h3 {
+    background-color: #e15546; 
+    padding: 5px 18px 8px 18px;
+    margin-left: 15px;
+    border-radius: 8px
+}
+
+.active-players {
+    width: 100%;
+    background-color: #243551;
+    margin-top: 25px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px
+}
+
+.player-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.player-row > p{
+    margin-left: 10px
+}
+
+.whatsapp-icon {
+    height: 20px;
+    margin-left: -13px !important;
+    margin-top: 8px;
+}
+
+#c1 {
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .room-code > h1 {
+      font-size: 22px
+    }
+
+    .login-details {
+        font-size: 12px
+    }
+  }
+

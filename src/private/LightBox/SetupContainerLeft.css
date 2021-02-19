@@ -1,0 +1,13 @@
+.setup-container-left {
+    box-sizing: border-box;
+    background-color: #243551;
+    margin-bottom: 10px;
+    height: 90%;
+    width: 100%;
+    flex: 0.495;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    /* -webkit-box-shadow: 0px 0px 15px -9px #000000; 
+box-shadow: 0px 0px 15px -9px #000000;  */
+}

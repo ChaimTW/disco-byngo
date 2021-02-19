@@ -1,0 +1,70 @@
+.playlists {
+    height: 100%;
+    max-width: 100%;
+    overflow: scroll;
+}
+
+.playlists::-webkit-scrollbar {
+    display: none;
+  }
+
+.playlists > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button-container {
+  margin: 0 auto;
+  width: 150px
+}
+
+.playlist-button {
+    width: 100%
+}
+
+.customModal {
+  border-radius: 15px !important;
+  background-color: #182335 !important;
+  width: 80% !important;
+}
+
+.aws-btn {
+  --button-default-height: 44px !important;
+  --button-default-font-size: 15px !important;
+  --button-default-border-radius: 6px !important;
+  --button-horizontal-padding: 23px !important;
+  --button-raise-level: 5px !important;
+  --button-hover-pressure: 0.5 !important;
+  --transform-speed: 0.185s !important;
+  --button-primary-color: #e15546 !important; 
+  --button-primary-color-dark: #832e25 !important;
+  --button-primary-color-light: #ffffff !important;
+  --button-primary-color-hover: #c84f41 !important;
+  --button-primary-color-active: #c84f41 !important;
+  --button-primary-border: none !important;
+  --button-secondary-color: #1DB954 !important;
+  --button-secondary-color-dark: #0c5726 !important;
+  --button-secondary-color-light: white !important;
+  --button-secondary-color-hover: #1ba64c !important;
+  --button-secondary-color-active: #1ba64c !important;
+  --button-secondary-border: none !important;
+  --button-anchor-color: #f3c8ad !important;
+  --button-anchor-color-dark: #734922 !important;
+  --button-anchor-color-light: #4c3016 !important;
+  --button-anchor-color-hover: #f1bfa0 !important;
+  --button-anchor-border: 1px solid #8c633c !important;
+  }
+
+.preview {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-image {
+  width: 20%;
+  object-fit: contain;
+  margin-right: 20px;
+  border-radius: 10px;
+}

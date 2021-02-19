@@ -1,0 +1,14 @@
+.playing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playing-container > img {
+    border-radius: 3px;
+    margin-right: 15px
+}
+
+.title-artist {
+    justify-content: space-around;
+}

@@ -1,0 +1,22 @@
+.included-tracks {
+    overflow: scroll;
+    height: 260px;
+    margin-left: 10px;
+    z-index: 2;
+    position: relative
+}
+
+.included-tracks::-webkit-scrollbar {
+    display: none;
+}
+
+.track {
+    margin-bottom: 15px !important;
+}
+
+.shuffle-image {
+    position: absolute;
+    left: 120px;
+    z-index: 1;
+    opacity: 0.03;
+}

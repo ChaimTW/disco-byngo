@@ -1,0 +1,68 @@
+.wrapper {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 0px !important;
+}
+
+.device {
+    color: white;
+    text-align: center;
+    background-color: #243551;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.device > h2 {
+    margin-bottom: 20px;
+}
+
+.device-button {
+    margin-bottom: 20px
+}
+
+.spinner {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.button-next {
+    width: 100%;
+    margin-top: 20px;
+
+    margin: 0 auto;
+}
+
+.refresh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.customModal {
+    color: white !important;
+}
+
+.customModal > p {
+    text-align: center;
+}
+
+.device-option {
+    text-align: center;
+    padding: 25px;
+    cursor: pointer;
+    color: white;
+    transition: color 40ms ease-in-out;
+}
+
+.device-option:hover {
+    color: #1DB954;
+}
+
+.no-hover:hover {
+    color: white !important;
+    cursor: default;
+}

@@ -1,0 +1,35 @@
+.join {
+    display: grid;
+    place-content: center;
+    margin-top: 250px
+}
+
+.input {
+    padding: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    max-width: 300px;
+}
+
+.join-button {
+    text-decoration: none;
+}
+
+.join-button-text {
+    padding: 20px;
+    background-color: #1756c2;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 90px;
+    margin-left: 10px;
+}

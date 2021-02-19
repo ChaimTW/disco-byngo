@@ -1,0 +1,14 @@
+.drop-down {
+    margin-top: 20px
+}
+
+.clock-image {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    opacity: 0.05;
+}
