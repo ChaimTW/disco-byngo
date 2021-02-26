@@ -1,7 +1,8 @@
+require('dotenv').config();
 const authEndpoint = "https://accounts.spotify.com/authorize";
-const redirectUri = "https://byngo.netlify.app/";
-const clientId = "28f71a33ef684133b6e6a1f9634d39cb";
-const scopes = 'user-read-private user-read-email ugc-image-upload user-read-recently-played user-read-playback-state user-top-read app-remote-control playlist-modify-public user-modify-playback-state playlist-modify-private user-follow-modify user-read-currently-playing user-follow-read user-library-modify user-read-playback-position playlist-read-private user-read-email user-read-private user-library-read playlist-read-collaborative streaming';
+const redirectUri = "http://localhost:3000/";
+const clientId = "752d45e7985547d2bff2862e53ed001c";
+const scopes = 'user-read-email user-read-playback-state app-remote-control user-read-currently-playing user-follow-read user-read-playback-position playlist-read-private user-read-email user-read-private user-library-read playlist-read-collaborative streaming';
 
 export const getTokenFromUrl = () => {
     return window.location.hash

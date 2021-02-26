@@ -1,0 +1,149 @@
+.wrapper {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 0px !important;
+}
+
+.device {
+    color: white;
+    text-align: center;
+    background-color: #243551;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.device > h2 {
+    margin-bottom: 20px;
+}
+
+.device-button {
+    margin-bottom: 20px
+}
+
+.spinner {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.button-next {
+    width: 100%;
+    margin-top: 20px;
+
+    margin: 0 auto;
+}
+
+.refresh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.customModal {
+    color: white !important;
+}
+
+.customModal > p {
+    text-align: center;
+}
+
+.device-option {
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    transition: color 40ms ease-in-out;
+    background-color: #243551;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    border-radius: 10px;
+    width: 55%;
+    margin: 0 auto;
+}
+
+.device-option-selected {
+    background-color: #192335;
+    padding: 20px 0px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.device-option:hover {
+    color: #1DB954;
+}
+
+.no-hover:hover {
+    color: white !important;
+    cursor: default;
+}
+
+.device-dropdown {
+    text-align: center;
+}
+
+.react-dropdown-select-item {
+    background: #243551 !important;
+    color: white !important;
+}
+
+.css-p5gyb5-InputComponent {
+    margin: auto !important;
+    text-align: center !important;
+    color: white !important;
+}
+
+.css-16yxkam-InputComponent {
+    margin: 0 auto !important;
+}
+
+.react-dropdown-select-content > span {
+    margin: auto !important;
+    font-size: 14px !important;
+}
+
+.evc32pp0 {
+    font-size: 14px !important;
+}
+
+.e11wid6y0 {
+    color: white !important;
+}
+
+.react-dropdown-select-content {
+    color: white !important;
+    border-radius: 5px !important;
+}
+
+.css-wmw4vi-ReactDropdownSelect {
+    padding-left: 50px !important;
+}
+
+.react-dropdown-select-dropdown-handle {
+    margin-left: -2px !important;
+}
+
+/* .react-dropdown-select-input {
+    position: absolute !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+} */
+
+.react-dropdown-select {
+    border-radius: 5px !important;
+    background: #192335 !important
+}
+
+.react-dropdown-select-dropdown {
+    border-radius: 5px !important;
+    background: #192335 !important
+}
+
+.device-dropdown:hover {
+    border: 1px solid #3b69b3 !important
+}
+/* .css-wmw4vi-ReactDropdownSelect {
+    border: 1px solid #243551 !important
+} */

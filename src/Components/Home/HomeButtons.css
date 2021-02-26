@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+.login {
+    display: grid;
+    place-items: center;
+    height: 92vh;
+    color: white
+}
+
+.login-logo {
+    width: 25%;
+}
+
+.login-button {
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.login-button-text {
+    padding: 20px;
+    background-color: #1DB954;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 90px;
+}
+
+.join-button {
+    text-decoration: none;
+}
+
+.join-button-text {
+    padding: 20px;
+    background-color: #1756c2;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 90px;
+}
