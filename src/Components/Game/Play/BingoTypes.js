@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './BingoTypes.css';
 import horizontalImg from '/Users/ChaimTerWee/Documents/projects/spotify-bingo/spotify-bingo-v2/src/content/horizontal.png';
 import verticalImg from '/Users/ChaimTerWee/Documents/projects/spotify-bingo/spotify-bingo-v2/src/content/vertical.png';

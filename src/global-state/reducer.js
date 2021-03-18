@@ -3,6 +3,7 @@ export const initialState = {
     user: undefined,
     playlists: [],
     token: null,
+    refreshToken: null,
     currentItem: "select-playlist",
     selectedPlaylist: null,
     devices: [],
@@ -34,6 +35,11 @@ const reducer = (state, action) => {
                 ...state,
                 token: action.token
             };
+        case "SET_REFRESH_TOKEN":
+            return {
+                ...state,
+                refreshToken: action.refreshToken
+            }
         case "SET_PLAYLISTS":
             return {
                 ...state,

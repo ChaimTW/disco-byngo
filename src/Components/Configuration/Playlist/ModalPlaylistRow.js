@@ -7,7 +7,6 @@ export function ModalPlaylistRow({ playlist, onCloseModal }) {
     const [{ selectedPlaylist }, dispatch] = useDataLayerValue();
 
     function setSelectedPlaylist() {
-        console.log(playlist.tracks.total);
         if(playlist.tracks.total < 30) {
             return alert(`It is recommended to select a playlist with 45 or more songs with a minimum of 30 songs. Try adding at least ${30 - playlist.tracks.total} songs to your ${playlist.name} playlist.`)
         } else {

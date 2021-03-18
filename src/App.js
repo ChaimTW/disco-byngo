@@ -11,7 +11,7 @@ let socket;
 
 function initSocket(bool) {
   if(bool) {
-    socket = socketio.connect('http://localhost:4000/', {transports: ['websocket'], upgrade: false, secure: false, 'reconnection': false,'reconnectionDelay': 1000, 'reconnectionAttempts':Infinity, 'reconnectionDelayMax': 5000})
+    socket = socketio.connect('https://react-byngo-io.herokuapp.com/', {transports: ['websocket'], upgrade: false, secure: false, 'reconnection': false,'reconnectionDelay': 1000, 'reconnectionAttempts':Infinity, 'reconnectionDelayMax': 5000})
   }
 }
 

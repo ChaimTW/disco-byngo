@@ -5,10 +5,8 @@ import "react-awesome-button/dist/styles.css";
 import 'react-responsive-modal/styles.css';
 import { Modal } from 'react-responsive-modal';
 import { useDataLayerValue } from '/Users/ChaimTerWee/Documents/projects/spotify-bingo/spotify-bingo-v2/src/global-state/DataLayer.js';
-import { Navigation } from '/Users/ChaimTerWee/Documents/projects/spotify-bingo/spotify-bingo-v2/src/Components/Navigation/Navigation.js';
 import { Link } from 'react-router-dom';
 import ClipLoader from "react-spinners/ClipLoader";
-import ComputerIcon from '@material-ui/icons/Computer';
 import Select from "react-dropdown-select";
 
 function Device({ socket }) {
@@ -22,7 +20,6 @@ function Device({ socket }) {
     let optionsRef = useRef();
 
     function setSelectedDevice(selected) {
-        console.log(selected);
         let name = selected[0].value;
         for(let i = 0; i < devices.devices.length; i++) {
             if(name === devices.devices[i].name) {

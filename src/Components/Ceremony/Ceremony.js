@@ -1,7 +1,6 @@
 import React from 'react';
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
-import { Link } from 'react-router-dom';
 import { useDataLayerValue } from '../../global-state/DataLayer';
 import './Ceremony.css';
 
@@ -13,7 +12,7 @@ function Ceremony({ room, horizontalWinner, verticalWinner, diagonalWinner, blac
             type: "SET_TOKEN",
             token: null
         })
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "https://discobyngo.com/";
     }
 
     return (

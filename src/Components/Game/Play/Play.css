@@ -211,6 +211,10 @@ td:after {
     margin-top: 40%;
 }
 
+/* .aws-btn--secondary {
+    width: 100px !important;
+} */
+
 @media only screen and (max-width: 600px) {
     .content > p {
       font-size: 10px;

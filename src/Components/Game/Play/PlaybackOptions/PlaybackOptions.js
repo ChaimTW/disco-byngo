@@ -8,8 +8,6 @@ import { useDataLayerValue } from '/Users/ChaimTerWee/Documents/projects/spotify
 
 function PlaybackOptions({ tracks, socket, currentPlayers, paused, setPaused, inLobby, room }) {
     const [{ spotify, selectedDevice, autoPlay }] = useDataLayerValue();
-    const [order, setOrder] = useState([]);
-    const [current, setCurrent] = useState(0);
     const [seconds, setSeconds] = useState(0);
 
     let currentSecRef = useRef(80);
@@ -25,7 +23,6 @@ function PlaybackOptions({ tracks, socket, currentPlayers, paused, setPaused, in
     const decreaseSec = () => setSeconds((prev) => prev - 1);
     
     useEffect(() => {
-        console.log(tracks);
 
         let copy = JSON.parse(JSON.stringify(tracks))
         shuffleArr(copy);

@@ -3,7 +3,7 @@ import HomeButtons from '/Users/ChaimTerWee/Documents/projects/spotify-bingo/spo
 import { getTokenFromUrl } from '/Users/ChaimTerWee/Documents/projects/spotify-bingo/spotify-bingo-v2/src/spotify-api-logic/spotify-api-logic.js';
 import { Setup } from '/Users/ChaimTerWee/Documents/projects/spotify-bingo/spotify-bingo-v2/src/Components/Configuration/Setup.js';
 import SpotifyWebApi from 'spotify-web-api-js';
-import { useDataLayerValue } from '/Users/ChaimTerWee/Documents/projects/spotify-bingo/spotify-bingo-v2/src/global-state/DataLayer.js'
+import { useDataLayerValue } from '/Users/ChaimTerWee/Documents/projects/spotify-bingo/spotify-bingo-v2/src/global-state/DataLayer.js';
 
 const spotify = new SpotifyWebApi();
 
@@ -15,12 +15,17 @@ export function Home({ socket }) {
     const hash = getTokenFromUrl();
     window.location.hash = "";
 
-    const _token = hash.access_token;
+    let _token = hash.access_token;
+    let _refresh = hash.refresh_token;
 
     if(_token) {
-
       async function getInitialData() {
         await spotify.setAccessToken(_token);
+
+      dispatch({
+        type: "SET_REFRESH_TOKEN",
+        refreshToken: _refresh
+      })
 
       dispatch({
         type: "SET_TOKEN",
@@ -50,7 +55,7 @@ export function Home({ socket }) {
         spotify: spotify
       })
     }
-  }, [token, dispatch])
+  }, [])
 
   return (
     <div className="app">

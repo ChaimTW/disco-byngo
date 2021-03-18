@@ -8,7 +8,7 @@ import "react-awesome-button/dist/styles.css";
 import { WhatsappShareButton, WhatsappIcon } from 'react-share';
 
 function WaitingRoom({ room, currentPlayers, setInLobby, socket, isHost }) {
-    const [{ spotify }, dispatch] = useDataLayerValue();
+    const [{}, dispatch] = useDataLayerValue();
     const [autoPlay, setAutoPlay] = useState('full');
     const shareURL = "https://discobyngo.com/join";
     

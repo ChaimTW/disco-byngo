@@ -4,12 +4,14 @@ import { loginUrl } from '/Users/ChaimTerWee/Documents/projects/spotify-bingo/sp
 import { Link } from 'react-router-dom';
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
+import axios from 'axios';
 
 export function HomeButtons() {
     
     return(
         <div className="login">
-            <a className="login-button" href={loginUrl}><AwesomeButton type="secondary" onPress={null} className="device-button" >CREATE NEW GAME</AwesomeButton></a>
+            <a className="login-button" href='https://react-byngo-io.herokuapp.com/login'><AwesomeButton type="secondary" onPress={null} className="device-button" >CREATE NEW GAME</AwesomeButton></a>
+
             <h2>OR</h2>
             <Link to="/join"><div className="join-button"><AwesomeButton type="primary" onPress={null} className="device-button" >JOIN GAME</AwesomeButton></div></Link>
         </div>

@@ -7,7 +7,6 @@ import { AwesomeButton } from "react-awesome-button";
 import PlayingTrack from './PlayingTrack';
 import "react-awesome-button/dist/styles.css";
 import BingoTypes from './BingoTypes';
-import { Prompt } from 'react-router';
 import PersonIcon from '@material-ui/icons/Person';
 import ReactTooltip from 'react-tooltip';
 import Sidebar from "react-sidebar";
@@ -24,6 +23,7 @@ function Play({ tracks, socket, currentPlayers, currentlyPlayingTrack, paused, s
     const [openEndGameModal, setOpenEndGameModal] = useState(false);
     const [currentTrack, setCurrentTrack] = useState(null);
     const [playedTracks, setPlayedTracks] = useState([]);
+    
     const [bingo, setBingo] = useState(true);
     const [horizontalTaken, setHorizontalTaken] = useState(false);
     const [horizontalWinner, setHorizontalWinner] = useState(null);

@@ -5,7 +5,8 @@ import Play from '/Users/ChaimTerWee/Documents/projects/spotify-bingo/spotify-bi
 import Ceremony from '/Users/ChaimTerWee/Documents/projects/spotify-bingo/spotify-bingo-v2/src/Components/Ceremony/Ceremony.js';
 import { useBeforeunload } from 'react-beforeunload';
 import { Prompt } from 'react-router';
-import { indigo } from '@material-ui/core/colors';
+import { useDataLayerValue } from '../../global-state/DataLayer';
+import axios from 'axios';
 
 let memUserName;
 let memRoom;
@@ -25,6 +26,7 @@ if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and 
 }
 
 function Lobby({ socket }) {
+    const [{ token, spotify }] = useDataLayerValue();
     const [currentPlayers, setCurrentPlayers] = useState([]);
     const [room, setRoom] = useState(null);
     const [tracks, setTracks] = useState(null);
@@ -58,9 +60,21 @@ function Lobby({ socket }) {
 
     useBeforeunload(() => "Are you sure you want to quit the game? You will lose your progress!");
 
+    async function requestNewToken() {
+        await axios.get('https://react-byngo-io.herokuapp.com/refresh_token').then(res => {
+            spotify.setAccessToken(res.data.access_token);
+        });
+    }
+
     // When socket receives 'update' event, update states
     useEffect(() => {
-        document.addEventListener(visibilityChange, handleVisibilityChange, false);  
+        if(token !== null) {
+            setInterval(() => {
+                requestNewToken();
+            }, 2000000)
+        }
+
+        document.addEventListener(visibilityChange, handleVisibilityChange, false);
 
         socket.on('room_info', ({ room, roomInfo, userName }) => {
             memUserName = userName;
