@@ -13,7 +13,7 @@ It requires you to log into Spotify using OAuth2.0 and gives you access to all y
 * Private game rooms
 * Everything is done in a real-time online multiplayer environment
 
-## Challenges
+## Biggest challenge
 * Keeping the websocket connection alive on mobile phones turned out to be very difficult as mobile phone connections automatically close when users lock their screen. 
 > **Solution**: Close connection when screen is locked, reopen a websocket connection upon re-opening screen. Send all up-to-date room info to the user.
 
