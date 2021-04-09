@@ -25,6 +25,7 @@ https://discobyngo.com
 * Node/Express
 * Socket.io
 * Spotify Web API
+* Context API
 
 ## Hosting
 * **Frontend:** Netlify
