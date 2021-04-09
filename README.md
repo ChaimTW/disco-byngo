@@ -3,3 +3,8 @@
 
 ## Demo
 https://discobyngo.com
+
+## Libraries used
+* ReactJS
+* Socket.io
+* Spotify Web API
