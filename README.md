@@ -2,4 +2,4 @@
 > Play music bingo with your friends using your own Spotify Playlists
 
 # Demo
-https://disocbyngo.com
+https://discobyngo.com
