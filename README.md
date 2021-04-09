@@ -1,2 +1,5 @@
 # Disco Byngo
-> Named after [Dexter](http://en.wikipedia.org/wiki/Dexter_Morgan), a show you should not watch until completion.
+> Play music bingo with your friends using your own Spotify Playlists
+
+# Demo
+https://disocbyngo.com
