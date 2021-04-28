@@ -30,3 +30,6 @@ https://discobyngo.com
 ## Hosting
 * **Frontend:** Netlify
 * **Backend:** Heroku
+
+## Database
+* MongoDB
