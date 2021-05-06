@@ -9,8 +9,8 @@ https://discobyngo.com
 
 ## Features
 * Spotify login :bust_in_silhouette:
-* Unlimited playlists :scroll:
-* Unlimited songs :notes:
+* Use your own playlists :scroll:
+* Use your own songs :notes:
 * Automatic bingo card generator :black_square_button:
 * Host options :crown:
 * Bingo-validity checker :white_check_mark:
