@@ -8,6 +8,7 @@ It requires you to log into Spotify using OAuth2.0 and gives you access to all y
 https://discobyngo.com
 
 ## Features
+* Spotify login
 * Unlimited playlists
 * Unlimited songs
 * Automatic bingo card generator
